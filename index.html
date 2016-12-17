@@ -1,0 +1,66 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>JS Calculator</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link href="css/semantic.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="css/main.css">
+		<link href='http://fonts.googleapis.com/css?family=Orbitron' rel='stylesheet' />
+  </head>
+  <body translate="no">
+    <div class="ui text container">
+      <div class="content">
+        <h1 class="ui center aligned header">FreeCodeCamp        </h1>
+        <div id="calculator" ng-app="myApp" ng-controller="appController" class="ng-scope">
+          <h4 class="ui center aligned header">ELECTRONIC CALCULATOR      </h4>
+          <div id="screen">
+            <div class="ui right aligned header ng-binding" id="entry">{{log}}</div>
+            <div class="ui right aligned header ng-binding" id="answer">{{answer}}</div>
+          </div>
+          <div class="ui four column celled grid" id="button-pad">
+            <div class="row">
+              <div class="column light button" ng-click="ctrls.clear()">C</div>
+              <div class="column light button" ng-click="ctrls.current(&quot;<<&quot;)">&lt;&lt;</div>
+              <div class="column light button" ng-click="ctrls.current(&quot;%&quot;)">%</div>
+              <div class="column light button" ng-click="ctrls.current(&quot;/&quot;)">/</div>
+            </div>
+            <div class="row">
+              <div class="column button" ng-click="ctrls.current(&quot;7&quot;)">7</div>
+              <div class="column button" ng-click="ctrls.current(&quot;8&quot;)">8        </div>
+              <div class="column button" ng-click="ctrls.current(&quot;9&quot;)">9</div>
+              <div class="column light button" ng-click="ctrls.current(&quot;x&quot;)">X</div>
+            </div>
+            <div class="row">
+              <div class="column button" ng-click="ctrls.current(&quot;4&quot;)">4</div>
+              <div class="column button" ng-click="ctrls.current(&quot;5&quot;)">5        </div>
+              <div class="column button" ng-click="ctrls.current(&quot;6&quot;)">6</div>
+              <div class="column light button" ng-click="ctrls.current(&quot;-&quot;)">-</div>
+            </div>
+            <div class="row">
+              <div class="column button" ng-click="ctrls.current(&quot;1&quot;)">1</div>
+              <div class="column button" ng-click="ctrls.current(&quot;2&quot;)">2        </div>
+              <div class="column button" ng-click="ctrls.current(&quot;3&quot;)">3</div>
+              <div class="column light button" ng-click="ctrls.current(&quot;+&quot;)">+        </div>
+            </div>
+            <div class="row">
+              <div class="column button" ng-click="ctrls.current(&quot;.&quot;)">.</div>
+              <div class="column button" ng-click="ctrls.current(&quot;0&quot;)">0        </div>
+              <div class="column button" ng-click="ctrls.current(&quot;+-&quot;)">+/-</div>
+              <div class="column equal button" ng-click="ctrls.current(&quot;=&quot;)">=  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  <footer class="ui text container" id="footer">
+    <p>Designed &amp; Coded by <a href="https://github.com/theslyone" target="_blank">slyguy</a></p>
+  </footer>
+  <script src="js/vendor/angular.min.js"></script>
+  <script src="js/calc.js"></script>
+  <script src="js/app.js"></script>
+ </body>
+</html>

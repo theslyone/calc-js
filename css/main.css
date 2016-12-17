@@ -1,0 +1,81 @@
+body {
+  font-family: 'Orbitron', sans-serif !important;
+  background-color: #ccc;
+  overflow: hidden;
+}
+.content {
+  height: 500px;
+  width: 300px;
+  margin: 50px auto;
+  padding-top: 20px;
+}
+#calculator {
+  width: 300px;
+  margin: 20px auto;
+  background-color: #1d1f20;
+  padding-top: 20px;
+}
+#calculator h4 {
+  color: #fff;
+}
+#screen {
+  margin: 0 auto;
+  height: 150px;
+  border: 2px solid #b4b39d;
+  background-color: #fff;
+  padding-right: 10px;
+}
+#screen #entry {
+  font-size: 45px;
+}
+#screen #answer {
+  font-size: 20px;
+  margin-top: 30px;
+  color: #8b8b7b;
+}
+#button-pad {
+  margin: 0 auto !important;
+  text-align: center;
+}
+#button-pad .button {
+  color: #000;
+  border: none !important;
+  border-radius: 0px !important;
+  cursor: pointer;
+}
+#button-pad .button:hover {
+  background-color: #3a3a3a;
+}
+#button-pad .light.button {
+  background-color: #3a3a3a !important;
+}
+#button-pad .light.button:hover {
+  background-color: #1d1f20 !important;
+}
+#button-pad .equal.button {
+  background-color: #006400 !important;
+}
+#button-pad .equal.button:hover {
+  background-color: #008b00 !important;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+span,
+div,
+button {
+  font-family: 'Orbitron', sans-serif !important;
+}
+#footer {
+  font-family: sans-serif;
+  position: relative;
+  font-size: 16px;
+  font-weight: normal;
+  margin-top: 40px;
+  width: 100%;
+  height: 40px;
+  text-align: center;
+  padding-top: 20px;
+}
